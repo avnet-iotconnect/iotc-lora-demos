@@ -1,4 +1,4 @@
-Setting Up Lora Basics Station on STM32MP157DK
+# Setting Up Lora Basics Station on STM32MP157DK
 
 These instructions should enable a working system to be created. The setup is based on a Dunfell build that will run on a HAL-patched Kirkstone.
   
