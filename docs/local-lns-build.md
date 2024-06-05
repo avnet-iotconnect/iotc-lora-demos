@@ -1,4 +1,4 @@
-## Build Instructions
+# Building a Gateway with ChirpStack and LNS
 
 These instructions leverage the power of Docker to create a reproducible build that works across different OS environments, one of the main ideas is to avoid problems caused by having a too old/new version of Linux being used the Yocto build system, as those can cause build failures.
 
