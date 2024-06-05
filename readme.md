@@ -4,11 +4,12 @@ This repository contains a series of guides for setting up and integrating a LoR
 
 ## Table of Contents
 
-1. [Building a Gateway with ChirpStack and LNS](docs/ChirpStack-Gateway.md)
-2. [Integrating BasicStation into the Gateway](/lora-basics-build.md)
-3. [Connecting the Gateway to IoTConnect](docs/IoTConnect-Gateway.md)
-4. [Connecting a Device to a Gateway in IoTConnect](docs/IoTConnect-Device.md)
-5. [Connecting to a Public LoRaWAN Network with Everynet through IoTConnect](docs/Everynet-IoTConnect.md)
+1. [Create a Docker build machine](docs/build-machine-docker.md)
+2. [Building a Gateway with ChirpStack and LNS](docs/local-lns-build.md)
+3. [Integrating BasicStation into the Gateway](docs/lora-basics-build.md)
+4. [Connecting the Gateway to IoTConnect](docs/iotc-gateway-build.md)
+5. [Connecting a Device to a Gateway in IoTConnect](docs/iotc-lora-priv-device-onboard.md)
+6. [Connecting to a Public LoRaWAN Network with Everynet through IoTConnect](docs/iotc-lora-pub-device-onboard.md)
 
 ## Overview
 
