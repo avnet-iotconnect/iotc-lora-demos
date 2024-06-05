@@ -1,4 +1,4 @@
-### Installing Docker on Ubuntu
+# Installing Docker on Ubuntu
 
 Follow these steps to install Docker on a fresh Ubuntu machine.
   
