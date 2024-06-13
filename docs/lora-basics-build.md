@@ -143,8 +143,9 @@ STM32_Programmer_CLI -c port=usb1 -w flashlayout_st-image-weston/trusted/FlashLa
 ### Step 5: Configure and Run Lora Basics Station
 <details> <summary>Click to expand</summary>
 Return to the local folder where you stored the basicstation build and copy it to the target device:
+  
 ```
-scp -r ./basicstation root@stm32mp1.local:
+  scp -r ./basicstation root@stm32mp1.local:
 ```
 
 SSH into the target device and set up the necessary scripts:
@@ -176,7 +177,7 @@ Configure LNS:
 ```
 mkdir lns-iotc
 cd lns-iotc
-cp ../../examples/corecell/lns-ttn/station.conf ./
+cp ../../../examples/corecell/lns-ttn/station.conf ./
 ```
 
 Set pulse per second to true to mitigate clock drifts. Edit station.conf and add "pps": true in "SX1302_conf":{}.
