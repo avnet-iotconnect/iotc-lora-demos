@@ -1,0 +1,133 @@
+{
+    "code": "STAstra1b",
+    "name": "ST Eval Astra 1B",
+    "authType": 2,
+    "isEdgeSupport": "0",
+    "attributes": [
+        {
+            "name": "temperature",
+            "type": "DECIMAL",
+            "description": null,
+            "unit": null
+        },
+        {
+            "name": "pressure",
+            "type": "INTEGER",
+            "description": null,
+            "unit": null
+        },
+        {
+            "name": "humidity",
+            "type": "DECIMAL",
+            "description": null,
+            "unit": null
+        },
+        {
+            "name": "accelerometer",
+            "type": "OBJECT",
+            "description": null,
+            "childs": [
+                {
+                    "name": "x",
+                    "type": "DECIMAL",
+                    "description": null,
+                    "unit": null,
+                    "attributeColor": null
+                },
+                {
+                    "name": "y",
+                    "type": "DECIMAL",
+                    "description": null,
+                    "unit": null,
+                    "attributeColor": null
+                },
+                {
+                    "name": "z",
+                    "type": "DECIMAL",
+                    "description": null,
+                    "unit": null,
+                    "attributeColor": null
+                }
+            ]
+        },
+        {
+            "name": "location",
+            "type": "OBJECT",
+            "description": null,
+            "childs": [
+                {
+                    "name": "lat_lon",
+                    "type": "LATLONG",
+                    "description": null,
+                    "unit": null,
+                    "attributeColor": "#0062b1"
+                },
+                {
+                    "name": "alt",
+                    "type": "DECIMAL",
+                    "description": null,
+                    "unit": null,
+                    "attributeColor": null
+                }
+            ]
+        },
+        {
+            "name": "analogInput",
+            "type": "DECIMAL",
+            "description": null,
+            "unit": null
+        },
+        {
+            "name": "digitalOutput",
+            "type": "BOOLEAN",
+            "description": null,
+            "unit": null
+        },
+        {
+            "name": "digitalInput",
+            "type": "BOOLEAN",
+            "description": null,
+            "unit": null
+        },
+        {
+            "name": "status",
+            "type": "INTEGER",
+            "description": null,
+            "unit": null
+        },
+        {
+            "name": "decoder_name",
+            "type": "STRING",
+            "description": null,
+            "unit": null
+        }
+    ],
+    "commands": [
+        {
+            "name": "AT LWStatus",
+            "command": "!fwdwl AT+LWSTATUS",
+            "requiredParam": false,
+            "requiredAck": false,
+            "isOTACommand": false
+        },
+        {
+            "name": "Lora_Params",
+            "command": "?loraparams",
+            "requiredParam": false,
+            "requiredAck": false,
+            "isOTACommand": false
+        }
+    ],
+    "messageVersion": "2.1",
+    "msgCode": "XG4ETC0",
+    "greenGrass": "0",
+    "wireless": "1",
+    "properties": {
+        "description": null,
+        "dataFrequency": "5",
+        "fileSupport": false
+    },
+    "_meta": {
+        "version": "2.0"
+    }
+}
