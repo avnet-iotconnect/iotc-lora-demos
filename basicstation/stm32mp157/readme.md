@@ -7,6 +7,7 @@ Extract
 Program
 
 Install Basicstation
+Download at: https://saleshosted.z13.web.core.windows.net/quickstart/yocto/lorabasics/stm32mp157-kirkstone-05282024.zip
 
 Optional, add wifi
 
