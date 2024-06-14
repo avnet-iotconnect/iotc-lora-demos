@@ -76,6 +76,17 @@ if [ -z "$lns_config" ]; then
 	show_help
 fi
 
+set -x
+
+# Add the directory containing rinit.sh to PATH
+export PATH=$PATH:/home/basicstation/projects/iotc
+
+# Debug: print the PATH
+echo "PATH is: $PATH"
+
+# Check for rinit.sh presence in PATH
+which rinit.sh
+
 STATION_BIN="../../build-stm32-$variant/bin/station"
 
 
