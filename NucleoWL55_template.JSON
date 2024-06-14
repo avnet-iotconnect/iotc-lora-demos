@@ -1,0 +1,62 @@
+{
+    "code": "NucleoWL55",
+    "name": "NucleoWL55",
+    "authType": 2,
+    "isEdgeSupport": "0",
+    "attributes": [
+        {
+            "name": "decoder_name",
+            "type": "STRING",
+            "description": null,
+            "unit": null
+        },
+        {
+            "name": "battery_value",
+            "type": "DECIMAL",
+            "description": null,
+            "unit": null
+        },
+        {
+            "name": "temperature",
+            "type": "DECIMAL",
+            "description": null,
+            "unit": null
+        },
+        {
+            "name": "humidity",
+            "type": "DECIMAL",
+            "description": null,
+            "unit": null
+        },
+        {
+            "name": "pressure",
+            "type": "DECIMAL",
+            "description": null,
+            "unit": null
+        },
+        {
+            "name": "status",
+            "type": "INTEGER",
+            "description": null,
+            "unit": null
+        },
+        {
+            "name": "led",
+            "type": "DECIMAL",
+            "description": null,
+            "unit": null
+        }
+    ],
+    "messageVersion": "2.1",
+    "msgCode": "XG4E9EG",
+    "greenGrass": "0",
+    "wireless": "1",
+    "properties": {
+        "description": null,
+        "dataFrequency": "30",
+        "fileSupport": false
+    },
+    "_meta": {
+        "version": "2.0"
+    }
+}
