@@ -1,4 +1,3 @@
-
 # LoRa Device Onboarding into IoTConnect
 
 *Inspired by[IoTConnect Docs](https://docs.iotconnect.io/iotconnect)*
@@ -6,8 +5,7 @@
 <img src="https://docs.iotconnect.io/wp-content/uploads/2023/12/image3-1.png" width="300"/>  
 
 ## Device-Specific Information
-**STMicroelectronics [ASTRA1B](https://www.st.com/en/evaluation-tools/steval-astra1b.html)**
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuUvwhUi2eIfRwAxsZLPgo0tNGBRt2WQ2Z-A&s" height="60"/>  
+<details> <summary> STMicroelectronics ASTRA1B <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuUvwhUi2eIfRwAxsZLPgo0tNGBRt2WQ2Z-A&s" height="60"/>   </summary>
 
 |--------**Attribute**------|--------**Data Type** -----|---**Object Properties(type)**----|
 
@@ -32,10 +30,10 @@
 
 |-----decoder_name-----|--------string---------|---------------------------------|
 
+</details> 
 
-**STMicroelectronics [NUCLEO-WL55JC](https://www.st.com/en/evaluation-tools/nucleo-wl55jc.html)** 
+<details> <summary> STMicroelectronics NUCLEO-WL55JC <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrhG19rSOKs0jSERjxYrv5qBlnB6VIhseXfQ&s" height="60"/>   </summary>
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrhG19rSOKs0jSERjxYrv5qBlnB6VIhseXfQ&s" height="60"/>
 
 |--------**Attribute**------|--------**Data Type** -----|
 
@@ -53,6 +51,8 @@
 |----------status----------|--------integer-------|
 
 |-----decoder_name-----|-------string----------|
+
+</details> 
 
 ## Device Templates
 
@@ -78,7 +78,7 @@ IoTConnect’s template feature will help you with the following:
 
 <p class="pimgbottom" align="center"><i>(Screen: Create Template)</i></p>
 
-Create at least one attribute of your choice, which will leads to create template for your LoRaWAN deices. The same attribute must exist in your device source code explain in below topics.
+Next, add the device telemetrty to thhe template attributbes, which requires the device name and device type are registered into the template.  , which will leads to create template for your LoRaWAN deices. The same attribute must exist in your device source code explain in below topics.
 
 <p class="mb-0" align="center"><img decoding="async" class="aligncenter size-full wp-image-1570" src="https://docs.iotconnect.io/wp-content/uploads/2023/12/reate-Attribute.png" alt="img" /></p>
 <p class="pimgbottom" align="center"><i>(Screen: Create Attribute)</i></p>
