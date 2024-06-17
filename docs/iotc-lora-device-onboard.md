@@ -1,11 +1,20 @@
 # LoRa Device Onboarding into IoTConnect
 
-*Inspired by[IoTConnect Docs](https://docs.iotconnect.io/iotconnect)*
+_Inspired by [IoTConnect Docs](https://docs.iotconnect.io/iotconnect)_
 
-<img src="https://docs.iotconnect.io/wp-content/uploads/2023/12/image3-1.png" width="300"/>  
+![IoTConnect Logo](https://docs.iotconnect.io/wp-content/uploads/2023/12/image3-1.png)
+
+## Device Attributes
+
+Add telemetry attributes specific to your device. These attributes should match the data points you plan to collect from your device. Below are two examples of device-specific attributes for the STMicroelectronics ASTRA1B and NUCLEO-WL55JC.
+
+### Examples:
+
 
 ## Device-Specific Information
 <details> <summary> STMicroelectronics ASTRA1B <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuUvwhUi2eIfRwAxsZLPgo0tNGBRt2WQ2Z-A&s" height="60"/>   </summary>
+
+[Product Site](https://www.st.com/en/evaluation-tools/steval-astra1b.html)
 
 |--------**Attribute**------|--------**Data Type** -----|---**Object Properties(type)**----|
 
@@ -34,6 +43,8 @@
 
 <details> <summary> STMicroelectronics NUCLEO-WL55JC <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrhG19rSOKs0jSERjxYrv5qBlnB6VIhseXfQ&s" height="60"/>   </summary>
 
+[Product Site](https://www.st.com/en/evaluation-tools/nucleo-wl55jc.html)
+
 
 |--------**Attribute**------|--------**Data Type** -----|
 
@@ -52,71 +63,80 @@
 
 |-----decoder_name-----|-------string----------|
 
-</details> 
+</details>
 
-## Device Templates
+### Creating a Template
 
-A template is a pre-defined structure required to manage LoRaWAN devices and their associated properties. The structure helps you to provision your IoT system to take care of the entire device management system with the seamless data flow.
+A template in IoTConnect is a predefined structure that helps manage LoRaWAN devices and their properties. Templates streamline device management by allowing seamless data flow and provision of associated attributes.
 
-A template is a pre-defined structure required to manage LoRaWAN devices and their associated properties. The structure helps you to provision your IoT system to take care of the entire device management system with the seamless data flow.
+#### Benefits of Using Templates:
 
-IoTConnect’s template feature will help you with the following:
+-   Simplify the addition and management of devices.
+-   Define data attributes that the device captures.
+-   Set up commands to control device actions.
 
- - Add and manage devices. 
- - Define associated data captured by the device in the form of attributes. 
- - Set commands to allocate the actions you
-   want the device to perform.
+### Steps to Create a Template
 
-### Create Template
-<strong>To create a template:</strong>
-<li>Go to <strong>Devices &gt; Wireless Device &gt; Templates.</strong></li>
+1.  **Navigate to Templates:**
+    
+    -   Go to **Devices > Wireless Device > Templates** in IoTConnect.
+2.  **Create a New Template:**
+    
+    -   Click **Create Template**.
+    -   Fill in the required fields for the template, including a descriptive name and the data attributes you want to include.
+    
+    ![Create Template](https://docs.iotconnect.io/wp-content/uploads/2023/12/Create-Template.png) _(Screen: Create Template)_
+    
+3.  **Add Device Attributes:**
+    
+    -   Using the examples provided above as a reference, add telemetry attributes specific to your device. These attributes should align with the data you plan to collect from your device and must be included in your device's source code.
+    
+    ![Create Attribute](https://docs.iotconnect.io/wp-content/uploads/2023/12/reate-Attribute.png) _(Screen: Create Attribute)_
+    
 
-<li>Click <strong>Create Template.</strong></li>
-<li>Complete the required fields:</li>
+## Create an IoTConnect LoRaWAN Device
 
-<p class="mb-0" align="center"><img decoding="async" class="aligncenter size-full wp-image-1570" src="https://docs.iotconnect.io/wp-content/uploads/2023/12/Create-Template.png" alt="img" /></p>
+To set up a LoRaWAN device for your organization on IoTConnect:
 
-<p class="pimgbottom" align="center"><i>(Screen: Create Template)</i></p>
+1.  **Access Device Creation:**
+    
+    -   Navigate to the **Devices** module and click on **Wireless Device**.
+    -   Click **Create Device**.
+    
+    ![Create Device](https://docs.iotconnect.io/wp-content/uploads/2023/12/Create-Device.png) _(Screen: Create Device)_
+    
+2.  **Enter Device Information:**
+    
+    -   Fill in the necessary fields such as Transmission Type, Unique ID, Display Name, DevEUI, AppEUI, and AppKey.
+    -   Select the relevant device profile, class specification, gateway, and template for your device.
+3.  **Specify Device Parameters:**
+    
+    -   **Transmission Type:** Select **LoRaWAN**.
+    -   **Unique ID:** Enter the device's unique identifier.
+    -   **Display Name:** Provide a user-friendly name for the device.
+    -   **Device Profile Name:** Describe the device profile.
+    -   **DevEUI:** This is the unique identifier from the manufacturer.
+    -   **AppEUI and AppKey:** Provide these keys for secure device communication.
+    -   **Max EIRP:** Set the default to 15.
+    -   **Class Specification:** Choose between Class A, B, or C based on your device's capabilities.
+    -   **Gateway:** Select the associated gateway.
+    -   **Mac Version:** Usually, select version 1.0.3 unless specified otherwise.
+    -   **Regional Parameters Version:** Typically, select RP002-1.0.1 unless your device documentation specifies otherwise.
+    -   **Device Manufacturer:** Choose the OEM of your device.
+    -   **Entity:** Select the entity for your device.
+    -   **Template:** Choose the relevant template.
+    -   **Notes:** Add any additional notes for the device.
 
-Next, add the device telemetrty to thhe template attributbes, which requires the device name and device type are registered into the template.  , which will leads to create template for your LoRaWAN deices. The same attribute must exist in your device source code explain in below topics.
+### LoRaWAN Telemetry
 
-<p class="mb-0" align="center"><img decoding="async" class="aligncenter size-full wp-image-1570" src="https://docs.iotconnect.io/wp-content/uploads/2023/12/reate-Attribute.png" alt="img" /></p>
-<p class="pimgbottom" align="center"><i>(Screen: Create Attribute)</i></p>
+Telemetry messages sent by a device can be viewed in the live data section. Devices can send either a few or all defined sensor (template attribute) values. Sending all attributes is not mandatory.
 
-## Create an IoTConnect LoRaWAN device
-<p>To create a LoRaWAN device for your organization:</p>
-<ol>
-<li>From the left navigation, mouseover the <strong>Devices</strong> module. Click <strong>Wireless Device</strong>.</li>
-<li>Along the top and toward the right, select Create <strong>Device</strong>.</li>
-<li>Enter data in the following fields:</li>
-</ol>
-<p class="mb-0" align="center"><img decoding="async" class="aligncenter size-full wp-image-1570" src="https://docs.iotconnect.io/wp-content/uploads/2023/12/Create-Device.png" alt="img"></p>
-<p class="pimgbottom" align="center"><i>(Screen: Create Device)
-<li><strong>Transmission type:</strong> Select for LoRaWAN.</li>
-<li><strong>Unique ID:</strong> Enter the unique ID of a device.</li>
-<li><strong>Display Name:</strong> Enter the display name for a device.</li>
-<li><strong>Device Profile Name:</strong> A descriptive name of your choice for this profile, e.g. “Workshop device profile of “.</li>
-<li><strong>DevEUI:</strong> Unique identifier assigned by the manufacturer.</li>
-<li><strong>AppEUI:</strong> Shared secret between device and the application.</li>
-<li><strong>AppKey:</strong> Uniquely identifies a join server (was renamed to JoinEUI in OTAA v.1.1).</li>
-<li><strong>Max EIRP:</strong> Please enter the default value 15.</li>
-<li><strong>Class Specification:</strong> Select your choice of Class A, Class B, Class C.</li>
-<li><strong>Gateway:</strong> Select the associate gateway.</li>
-<li><strong>Mac version:</strong> This parameter should specify the most recent version of LoRaWAN specification supported by your device. Unless device documentation states otherwise, please select 1.0.3.</li>
-<li><strong>Regional Parameters Version:</strong> Please select RP002-1.0.1, unless specified otherwise in your device documentation.</li>
-<li><strong>Device Manufacturer:</strong>Select your device OEM.</li>
-<li><strong>Entity:</strong> Select the entity for your device.</li>
-<li><strong>Template:</strong> Select the template for your device.</li>
-<li><strong>Notes:</strong>&nbsp;You can add required notes for a device.</li>
-</ul>
-</li>
-</ul>
-<h4>LoRaWAN Telemetry</h4>
-<p>Messages that a device sends are visible in the live data section. While sending telemetry data, devices can send a few or all sensor (Template attribute) values. It is not required to send all sensor (Template attributes) values.
-<h4>LoRaWAN Command</h4>
-<p>Each device command has facility to make sure that command is reached and executed on device. In this case json property “ack” will be true. That means IoTConnect is expecting acknowledgement back, for that you must send acknowledgement message with a status success/failed.
+### LoRaWAN Command
 
-  
-	
+Each command sent to the device can require an acknowledgment. If the `ack` JSON property is set to true, IoTConnect expects a status message (success/failed) in response.
 
+----------
 
+For more detailed guidance, refer to the [IoTConnect Documentation](https://docs.iotconnect.io/iotconnect).
+
+This guide helps you understand how to manage and configure your LoRaWAN devices within the IoTConnect platform efficiently.
