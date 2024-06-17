@@ -1,7 +1,6 @@
 # LoRaWAN Gateway Setup and Onboarding into IoTConnect
 
 ## Create a LoRaWAN Gateway
-
 To create a LoRaWAN gateway device for your organization, follow these steps:
 
 1.  **Access the Gateway Configuration:**
@@ -38,6 +37,13 @@ To create a LoRaWAN gateway device for your organization, follow these steps:
     
 
 ### Example: STM32MP157 LoRa Basicstation Gateway Setup Guide
+<img src="https://wiki.st.com/stm32mpu-ecosystem-v3/nsfr_img_auth.php/1/13/RAKModule_4a.png" height="300"/> 
+
+_(STM32MP1 LoRaWan Gateway)_
+
+#### Assemble the Gateway
+
+This sample uses the STM32MP157 DK and RAK5146 Concentrator stack board with USB. Follow section 2.2, [Hardware Prerequisites](https://wiki.st.com/stm32mpu-ecosystem-v3/wiki/How_to_integrate_LoRaWAN_gateway#Hardware_prerequisites), and section 3, [Hardware Setup](https://wiki.st.com/stm32mpu-ecosystem-v3/wiki/How_to_integrate_LoRaWAN_gateway#Hardware_setup) of the application blog, "How to integrate LoRaWAN gateway" from STMicroelectronics.
 
 #### Download, Extract, and Program
 
@@ -65,7 +71,7 @@ cd iotc-lora-demos/basicstation/stm32mp157/basicstation`
  ```
     scp -r basicstation/stm32mp157/basicstation root@<target-ip>:/home/
 ```
-    -   **Notes:** Ensure SSH and SCP are enabled on your Yocto target. Adjust the target directory paths as necessary to fit your file structure and permissions. Replace `<target-ip>` with the IP address of your Yocto device.
+**Note:** Ensure SSH and SCP are enabled on your Yocto target. Adjust the target directory paths as necessary to fit your file structure and permissions. Replace `<target-ip>` with the IP address of your Yocto device.
 
 #### Configure Gateway to IoTConnect
 
@@ -135,7 +141,7 @@ chmod +x *.sh
     
     -   Run the WiFi setup script if necessary:
 ```
-		cd /home/basicstation/projects/iotc
+	cd /home/basicstation/projects/iotc
         chmod +x wifi-setup.sh
         ./wifi-setup.sh` 
  ```       
