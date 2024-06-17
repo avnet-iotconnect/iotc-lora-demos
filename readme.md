@@ -1,24 +1,16 @@
-
-# LoRa and IoTConnect Integration Guide
+# LoRaWAN and IoTConnect Integration Guide
 
 Welcome to the Gateway and IoTConnect Integration Guide! This repository provides a collection of guides to help you set up and integrate a LoRaWAN gateway with various network servers and IoT platforms. Each guide focuses on a specific aspect of the integration process, from building the gateway firmware to connecting with public networks. Use the links below to access detailed instructions for each integration step.
 
 ![IoTConnect Ecosystem](img/IoTC-LoRa-eco.JPG)
 
-## Quick Links
-
-1.  [Connecting a LoRaWAN Device to IoTConnect](#connecting-a-lorawan-device-to-iotconnect)
-2.  [Configure an AWS Managed LNS Gateway](#configure-an-aws-managed-lns-gateway)
-3.  [Configure an Edge LNS Gateway](#configure-an-edge-lns-gateway)
-4.  [Optional Advanced Guide: Setting Up LoRa Basics Station on STM32MP157DK](#optional-advanced-guide-setting-up-lora-basics-station-on-stm32mp157dk)
-
-## Overview
+## Integration Steps
 
 ### 1. Connecting a LoRaWAN Device to IoTConnect
 
-This guide describes how to register and connect LoRaWAN devices to a gateway in IoTConnect. It includes steps for configuration, network settings, and verifying connectivity. Additionally, it provides guidance on integrating with Everynet, a public LoRaWAN network, to extend connectivity through IoTConnect.
+This guide provides comprehensive instructions on how to register and connect LoRaWAN devices to IoTConnect. It covers steps for device configuration, network settings, and verifying connectivity. Additionally, it offers guidance on integrating with public LoRaWAN networks such as Everynet to extend connectivity through IoTConnect.
 
-For detailed instructions, see the [IoTConnect Documentation](https://docs.iotconnect.io/iotconnect/user-manuals/devices/device/lorawan/#:~:text=Create%20a%20LoRaWAN%20device,in%20the%20following%20fields%3A).
+For detailed instructions, see the [Connecting a LoRaWAN Device to IoTConnect Guide](https://github.com/avnet-iotconnect/iotc-lora-demos/blob/master/docs/iotc-lora-device-onboard.md).
 
 ### 2. Configure an AWS Managed LNS Gateway
 
@@ -56,7 +48,7 @@ For a step-by-step guide on creating and configuring a LoRaWAN gateway in IoTCon
 
 ### LoRa Device Onboarding into IoTConnect
 
-To understand how to add and manage your LoRaWAN devices in IoTConnect, refer to iotc-lora-device-onboard.md.
+To understand how to add and manage your LoRaWAN devices in IoTConnect, refer to [iotc-lora-device-onboard.md](https://github.com/avnet-iotconnect/iotc-lora-demos/blob/master/docs/iotc-lora-device-onboard.md).
 
 ## Additional Resources
 
