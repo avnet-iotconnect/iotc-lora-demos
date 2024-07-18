@@ -35,13 +35,29 @@ To create a LoRaWAN gateway device for your organization, follow these steps:
 
 		_(Screen: LoRaWAN Certificates)_
     
-
-### Example: STM32MP157 LoRa Basicstation Gateway Setup Guide
-<img src="https://wiki.st.com/stm32mpu-ecosystem-v3/nsfr_img_auth.php/1/13/RAKModule_4a.png" height="300"/> 
-
-_(STM32MP1 LoRaWan Gateway)_
-
-#### Assemble the Gateway
+## Available LoRaWAN Gateways
+- Advantech
+	- [WISE-6610](https://partners.amazonaws.com/devices/a3G8a00000E2okZEAR/Advantech%20WISE-6610) <img src="https://github.com/user-attachments/assets/29b606c8-731a-4482-b70e-1798e963d6ae" height="60"/>
+- Dragino
+	- [LPS8 Gateway](https://partners.amazonaws.com/devices/a3G0h00000AjwBrEAJ/LPS8%20LoRaWAN%20Gateway) <img src="https://c.na65.content.force.com/servlet/servlet.ImageServer?id=0150h000004xExrAAE&oid=00DE0000000c48tMAA" height="60"/>
+ 	- [DLOS8 Outdoor Gateway](https://partners.amazonaws.com/devices/a3G0h00000AjwC1EAJ/DLOS8%20Outdoor%20LoRaWAN%20Gateway) <img src="https://c.na65.content.force.com/servlet/servlet.ImageServer?id=0150h000004xEyGAAU&oid=00DE0000000c48tMAA" height="60"/>
+	- [LG308 Pico Gateway](https://partners.amazonaws.com/devices/a3G0h00000AjwBwEAJ/LoRaWAN%20Indoor%20Gateway) <img src="https://c.na65.content.force.com/servlet/servlet.ImageServer?id=0150h000004xEy9AAE&oid=00DE0000000c48tMAA" height="60"/>
+ 	- [LIG16 Indoor Gateway](https://partners.amazonaws.com/devices/a3G0h00000EU2PLEA1/LIG16) <img src="https://c.na65.content.force.com/servlet/servlet.ImageServer?id=0150h0000056D67AAE&oid=00DE0000000c48tMAA" height="60"/>
+- Ezurio
+	- [Sentrius RG1xx Indoor Gateway](https://partners.amazonaws.com/devices/a3G0h000007dhzqEAA/Sentrius%20RG1xx%20LoRaWAN%20Gateway) <img src="https://github.com/user-attachments/assets/ee4064b4-58f6-4dd5-904d-88885ca7d668" height="60"/>
+- Kerlink
+	- [Wirnet iFemtoCell-evolution](https://partners.amazonaws.com/devices/a3G0h000007dhxwEAA/Wirnet%20iFemtoCell-evolution) <img src="https://c.na65.content.force.com/servlet/servlet.ImageServer?id=0150h000005634kAAA&oid=00DE0000000c48tMAA" height="60"/>
+	- [Wirnet iFemtoCell](https://partners.amazonaws.com/devices/a3G0h000007dhy1EAA/Wirnet%20iFemtoCell) <img src="https://c.na65.content.force.com/servlet/servlet.ImageServer?id=0150h000005634zAAA&oid=00DE0000000c48tMAA" height="60"/>
+	- [Wirnet iStation Outdoor Gateway](https://partners.amazonaws.com/devices/a3G0h000007dhxwEAA/Wirnet%20iFemtoCell-evolution) <img src="https://c.na65.content.force.com/servlet/servlet.ImageServer?id=0150h000005635JAAQ&oid=00DE0000000c48tMAA" height="60"/> 
+- MultiTech
+	- [Conduit® AP Indoor Gateway](https://partners.amazonaws.com/devices/a3G0h000007di1wEAA/MultiTech%20Conduit%C2%AE%20AP) <img src="https://github.com/user-attachments/assets/336a017b-99ff-4790-b44f-f01960f71a19" height="60"/>
+	- [Conduit Conduit® LTE Cat-4 Gateway](https://partners.amazonaws.com/devices/a3G0h000007di1wEAA/MultiTech%20Conduit%C2%AE%20AP) <img src="https://c.na65.content.force.com/servlet/servlet.ImageServer?id=0150h00000563DXAAY&oid=00DE0000000c48tMAA" height="60"/>
+	- [Conduit® 300 Series Gateway](https://partners.amazonaws.com/devices/a3G0h000007di0tEAA/MultiTech%20Conduit%C2%AE%20300%20Gateway) <img src="https://c.na65.content.force.com/servlet/servlet.ImageServer?id=0150h00000563CoAAI&oid=00DE0000000c48tMAA" height="60"/>
+ - Discrete Gateway Reference Designs
+	- STMicroelectronics STM32MP157 LoRa Basicstation Gateway
+ <details> <summary><img src="https://wiki.st.com/stm32mpu-ecosystem-v3/nsfr_img_auth.php/1/13/RAKModule_4a.png" height="60"/></summary>
+	 
+	 #### Assemble the Gateway
 
 This sample uses the STM32MP157 DK and RAK5146 Concentrator stack board with USB. Follow section 2.2, [Hardware Prerequisites](https://wiki.st.com/stm32mpu-ecosystem-v3/wiki/How_to_integrate_LoRaWAN_gateway#Hardware_prerequisites), and section 3, [Hardware Setup](https://wiki.st.com/stm32mpu-ecosystem-v3/wiki/How_to_integrate_LoRaWAN_gateway#Hardware_setup) of the application blog, "How to integrate LoRaWAN gateway" from STMicroelectronics.
 
@@ -173,6 +189,6 @@ WantedBy=multi-user.target
         systemctl enable start-gateway.service
         systemctl start start-gateway.service
         ```
-        
+   </details>         
 
 With these steps, you should have a fully functional STM32MP157 LoRa Basicstation gateway connected to IoTConnect. For any issues, refer to the [IoTConnect Documentation](https://docs.iotconnect.io/iotconnect) or seek assistance from the IoTConnect Ticket System.
