@@ -7,37 +7,29 @@ Welcome to the Gateway and IoTConnect Integration Guide! This repository provide
 
 ## Integration Steps
 
-### 1. Connecting a LoRaWAN Device to IoTConnect
+### 1. Connecting a LoRaWAN Gateway to IoTConnect
+
+This guide details how to set up your LoRaWAN gateway to communicate with IoTConnect's AWS network server. If you plan to connect your LoRaWAN device to AWS' public infrastructure, you can skip this step.
+
+For detailed instructions, see [Connecting a LoRaWAN Gateway to IoTConnect Guide](https://github.com/avnet-iotconnect/iotc-lora-demos/blob/master/docs/iotc-gateway-onboard.md)
+
+### 2. Connecting a LoRaWAN Device to IoTConnect
 
 This guide provides comprehensive instructions on how to register and connect LoRaWAN devices to IoTConnect. It covers steps for device configuration, network settings, and verifying connectivity. Additionally, it offers guidance on integrating with public LoRaWAN networks such as Everynet to extend connectivity through IoTConnect.
 
 For detailed instructions, see the [Connecting a LoRaWAN Device to IoTConnect Guide](https://github.com/avnet-iotconnect/iotc-lora-demos/blob/master/docs/iotc-lora-device-onboard.md).
 
-### 2. LoRaWAN Gateway Setup and Onboarding into IoTConnect
-
-For a step-by-step guide on creating and configuring a LoRaWAN gateway in IoTConnect, see [iotc-gateway-onboard.md](https://github.com/avnet-iotconnect/iotc-lora-demos/blob/master/docs/iotc-gateway-onboard.md). This guide details how to set up your LoRaWAN gateway to communicate with IoTConnect's network server, including configuration and secure communication setup.
-
-### 3. Configure an AWS Managed LNS Gateway
+### 3. Build and Configure LoRaWAN BasicStation for an AWS-Managed LNS Gateway
 
 This guide details how to compile and integrate the BasicStation protocol into the LoRaWAN gateway. BasicStation is a modern, secure, and flexible protocol for connecting gateways to network servers.
 
-For detailed steps, refer to the [AWS Managed LNS Gateway Guide](https://github.com/avnet-iotconnect/iotc-lora-demos/blob/master/docs/lora-basics-build.md).
+For detailed instructions, see [Build LoRa BasicStation Gateway Reference Design](https://github.com/avnet-iotconnect/iotc-lora-demos/blob/master/docs/lora-basics-build.md).
 
-### 4. Configure an Edge LNS Gateway
+### 4. Configure an Edge/Local LNS Gateway
 
-This repository does not focus on setting up Edge LNS Gateways. For comprehensive guidance on configuring a LoRaWAN gateway using ChirpStack with the LoRa Network Server (LNS) running directly on the gateway, please refer to the dedicated guide in the IoTConnect GitHub repository:
+For guidance on configuring a LoRaWAN gateway using ChirpStack with the LoRa Network Server (LNS) running directly on the gateway, please refer to the dedicated guide in the IoTConnect GitHub repository:
 
-Visit the [Edge LNS Gateway Guide](https://github.com/avnet-iotconnect/iotc-lora-gateway-example).
-
-### 5. Optional Advanced Guide: Setting Up LoRa Basics Station on STM32MP157DK
-
-For advanced users interested in a detailed build process using Yocto, see the optional guide [Setting Up LoRa Basics Station on STM32MP157DK](https://github.com/avnet-iotconnect/iotc-lora-demos/blob/master/docs/optional-lora-basics-station.md).
-
--   **Create a Docker Build Machine**  
-    This optional step is part of the advanced guide. Learn how to set up a Docker-based build environment for compiling gateway firmware and tools. This setup ensures a consistent and controlled development environment.
-    
-    For step-by-step instructions, see the [Docker Build Machine Guide](https://github.com/avnet-iotconnect/iotc-lora-demos/blob/master/docs/build-machine-docker.md).
-    
+For detailed instructions, see [Edge LNS Gateway Guide](https://github.com/avnet-iotconnect/iotc-lora-gateway-example).
 
 ## Getting Started
 
