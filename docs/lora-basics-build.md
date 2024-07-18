@@ -1,8 +1,12 @@
 # Setting Up Lora Basics Station on STM32MP157DK
 
 These instructions should enable a working system to be created. The setup is based on a Dunfell build that will run on a HAL-patched Kirkstone.
-  
-### Step 1: Create Environment 
+
+### Optional: Create a Docker Build Machine
+Learn how to set up a Docker-based build environment for compiling gateway firmware and tools. This setup ensures a consistent and controlled development environment.
+[Docker Build Machine Guide](https://github.com/avnet-iotconnect/iotc-lora-demos/blob/master/docs/build-machine-docker.md)
+    
+## Step 1: Create Environment 
 <details> <summary>Click to expand</summary>
 Follow the instructions to build a Yocto image at STM32MP1 Distribution Package:
 
@@ -30,7 +34,7 @@ bitbake st-image-weston
 ```
 </details> 
 
-### Step 2: Flash Target Device
+## Step 2: Flash Target Device
 <details> <summary>Click to expand</summary>
 Follow the instructions at Flashing the built image:
 
@@ -39,7 +43,7 @@ STM32_Programmer_CLI -c port=usb1 -w flashlayout_st-image-weston/trusted/FlashLa
 ```
 </details>
 
-### Step 3: Compile Lora Basics Station on Dunfell Host
+## Step 3: Compile Lora Basics Station on Dunfell Host
 <details> <summary>Click to expand</summary>
 SSH into root@stm32mp1.local (or by IP).
 
@@ -83,7 +87,7 @@ make platform=stm32 variant=debug
 Copy ~/basicstation to a local filesystem.
 </details>
 
-### Step 4: Build Patched Kirkstone Image
+## Step 4: Build Patched Kirkstone Image
 <details> <summary>Click to expand</summary>
 Create the build environment:
 
@@ -140,7 +144,7 @@ STM32_Programmer_CLI -c port=usb1 -w flashlayout_st-image-weston/trusted/FlashLa
 ```
 </details>
 
-### Step 5: Configure and Run Lora Basics Station
+## Step 5: Configure and Run Lora Basics Station
 <details> <summary>Click to expand</summary>
 Return to the local folder where you stored the basicstation build and copy it to the target device:
   
