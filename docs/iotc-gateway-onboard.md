@@ -1,11 +1,11 @@
-# LoRaWAN Gateway Setup and Onboarding into IoTConnect
+# LoRaWAN Gateway Setup and Onboarding into /IOTCONNECT
 
 ## Create a LoRaWAN Gateway
 To create a LoRaWAN gateway device for your organization, follow these steps:
 
 1.  **Access the Gateway Configuration:**
     
-    -   From the left navigation menu in IoTConnect, hover over the **Devices** module.
+    -   From the left navigation menu in IOTCONNECT, hover over the **Devices** module.
     -   Click on **Wireless Device**.
 2.  **Create a Gateway:**
     
@@ -28,7 +28,7 @@ To create a LoRaWAN gateway device for your organization, follow these steps:
     
 4.  **Configure CUPS and LNS URIs:**
     
-    -   Retrieve the CUPS (Configuration and Update Server) URI and LNS (LoRaWAN Network Server) URI from the **Settings > Key Vault** interface in IoTConnect.
+    -   Retrieve the CUPS (Configuration and Update Server) URI and LNS (LoRaWAN Network Server) URI from the **Settings > Key Vault** interface in IOTCONNECT.
     -   Download the server trust certificates and configure your gateway with these URIs and certificates.
 ![enter image description here](https://docs.iotconnect.io/wp-content/themes/iotconnect/assets/img/image2.png)
 ![enter image description here](https://docs.iotconnect.io/wp-content/themes/iotconnect/assets/img/image3.png)
@@ -89,9 +89,9 @@ cd iotc-lora-demos/basicstation/stm32mp157/basicstation`
 ```
 **Note:** Ensure SSH and SCP are enabled on your Yocto target. Adjust the target directory paths as necessary to fit your file structure and permissions. Replace `<target-ip>` with the IP address of your Yocto device.
 
-#### Configure Gateway to IoTConnect
+#### Configure Gateway to IOTCONNECT
 
-1.  **Configure Gateway in IoTConnect:**
+1.  **Configure Gateway in IOTCONNECT:**
     
     -   Navigate to **Devices > Wireless Device**.
     -   Select **LoRaWAN Gateway**.
@@ -149,7 +149,7 @@ cd /home/basicstation/projects/iotc/
 chmod +x *.sh
 ./start-station.sh -l lns-iotc` 
 ```
--   Check the connection status in IoTConnect.
+-   Check the connection status in IOTCONNECT.
 
 #### Optional Configurations
 
@@ -191,4 +191,4 @@ WantedBy=multi-user.target
         ```
    </details>         
 
-With these steps, you should have a fully functional STM32MP157 LoRa Basicstation gateway connected to IoTConnect. For any issues, refer to the [IoTConnect Documentation](https://docs.iotconnect.io/iotconnect) or seek assistance from the IoTConnect Ticket System.
+With these steps, you should have a fully functional STM32MP157 LoRa Basicstation gateway connected to IOTCONNECT. For any issues, refer to the [IOTCONNECT Documentation](https://docs.iotconnect.io/iotconnect) or seek assistance from the IOTCONNECT Ticket System.
