@@ -1,8 +1,8 @@
-# LoRa Device Onboarding into IoTConnect
+# LoRa Device Onboarding into IOTCONNECT
 
-_Inspired by [IoTConnect Docs](https://docs.iotconnect.io/iotconnect)_
+_Inspired by [IOTCONNECT Docs](https://docs.iotconnect.io/iotconnect)_
 
-![IoTConnect Logo](https://docs.iotconnect.io/wp-content/uploads/2023/12/image3-1.png)
+![IOTCONNECT Logo](https://docs.iotconnect.io/wp-content/uploads/2023/12/image3-1.png)
 
 ## Device Attributes
 
@@ -67,7 +67,7 @@ Add telemetry attributes specific to your device. These attributes should match 
 
 ### Creating a Template
 
-A template in IoTConnect is a predefined structure that helps manage LoRaWAN devices and their properties. Templates streamline device management by allowing seamless data flow and provision of associated attributes.
+A template in IOTCONNECT is a predefined structure that helps manage LoRaWAN devices and their properties. Templates streamline device management by allowing seamless data flow and provision of associated attributes.
 
 #### Benefits of Using Templates:
 
@@ -79,7 +79,7 @@ A template in IoTConnect is a predefined structure that helps manage LoRaWAN dev
 
 1.  **Navigate to Templates:**
     
-    -   Go to **Devices > Wireless Device > Templates** in IoTConnect.
+    -   Go to **Devices > Wireless Device > Templates** in IOTCONNECT.
 2.  **Create a New Template:**
     
     -   Click **Create Template**.
@@ -94,9 +94,9 @@ A template in IoTConnect is a predefined structure that helps manage LoRaWAN dev
     ![Create Attribute](https://docs.iotconnect.io/wp-content/uploads/2023/12/reate-Attribute.png) _(Screen: Create Attribute)_
     
 
-## Create an IoTConnect LoRaWAN Device
+## Create an /IOTCONNECT LoRaWAN Device
 
-To set up a LoRaWAN device for your organization on IoTConnect:
+To set up a LoRaWAN device for your organization on IOTCONNECT:
 
 1.  **Access Device Creation:**
     
@@ -133,10 +133,10 @@ Telemetry messages sent by a device can be viewed in the live data section. Devi
 
 ### LoRaWAN Command
 
-Each command sent to the device can require an acknowledgment. If the `ack` JSON property is set to true, IoTConnect expects a status message (success/failed) in response.
+Each command sent to the device can require an acknowledgment. If the `ack` JSON property is set to true, IOTCONNECT expects a status message (success/failed) in response.
 
 ----------
 
-For more detailed guidance, refer to the [IoTConnect Documentation](https://docs.iotconnect.io/iotconnect).
+For more detailed guidance, refer to the [IOTCONNECT Documentation](https://docs.iotconnect.io/iotconnect).
 
-This guide helps you understand how to manage and configure your LoRaWAN devices within the IoTConnect platform efficiently.
+This guide helps you understand how to manage and configure your LoRaWAN devices within the IOTCONNECT platform efficiently.
