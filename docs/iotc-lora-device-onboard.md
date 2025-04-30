@@ -1,4 +1,4 @@
-# LoRa Device Onboarding into IOTCONNECT
+# LoRa Device Onboarding into /IOTCONNECT
 
 _Inspired by [IOTCONNECT Docs](https://docs.iotconnect.io/iotconnect)_
 
