@@ -1,7 +1,7 @@
 
-# LoRa and IOTCONNECT Integration Guide
+# LoRa and /IOTCONNECT Integration Guide
 
-Welcome to the Gateway and IOTCONNECT Integration Guide! This repository provides a collection of guides to help you set up and integrate a LoRaWAN gateway with various network servers and IoT platforms. Each guide focuses on a specific aspect of the integration process, from building the gateway firmware to connecting with public networks. Use the links below to access detailed instructions for each integration step.
+Welcome to the Gateway and /IOTCONNECT Integration Guide! This repository provides a collection of guides to help you set up and integrate a LoRaWAN gateway with various network servers and IoT platforms. Each guide focuses on a specific aspect of the integration process, from building the gateway firmware to connecting with public networks. Use the links below to access detailed instructions for each integration step.
 
 ![IOTCONNECT Ecosystem](img/IoTC-LoRa-eco.JPG)
 
