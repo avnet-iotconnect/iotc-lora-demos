@@ -25,27 +25,27 @@ This section guides you through using **Renesas RA series boards** with LoRaWAN 
 Each board has slightly different jumper and PMOD configurations.
 
 ### FPB-RA2E1 Setup  
-![FPB-RA2E1 Setup](https://github.com/avnet-iotconnect/iotc-lora-demos/assets/ra2e1-setup.jpg)  
+![FPB-RA2E1 Setup](../../img/ra2e1-setup.jpg)  
 - Use PMOD2 for UART.
 - Use `CN1` 1-2 short for programming, 2-3 short to run.
 - Cut/short jumper pins to enable Sub Clock and I2C if using the sensor.  
 **Ref:** [RA2E1 Setup Diagram, R11AN0596EJ0470](https://www.renesas.com/us/en/document/apn/r11an0596ej0470-ra-lora.pdf) page 4
 
 ### EK-RA2L1 Setup  
-![EK-RA2L1 Setup](https://github.com/avnet-iotconnect/iotc-lora-demos/assets/ra2l1-setup.jpg)  
+![EK-RA2L1 Setup](../../img/ra2l1-setup.jpg)  
 - UART on PMOD2; sensor on PMOD1 (optional).
 - Sub Clock enabled with cuts/shorts on jumpers E1, E8–E10.  
 **Ref:** [RA2L1 Setup Diagram, R11AN0596EJ0470](https://www.renesas.com/us/en/document/apn/r11an0596ej0470-ra-lora.pdf) page 5
 
 ### FPB-RA0E1 Setup  
-![FPB-RA0E1 Setup](https://github.com/avnet-iotconnect/iotc-lora-demos/assets/ra0e1-setup.jpg)  
+![FPB-RA0E1 Setup](../../img/ra0e1-setup.jpg)  
 - UART on PMOD1.
 - Wire J5-2 to J5-6 to route DIO1 interrupt.
 - Optional sensor on PMOD2.  
 **Ref:** [RA0E1 Setup Diagram, R11AN0596EJ0470](https://www.renesas.com/us/en/document/apn/r11an0596ej0470-ra-lora.pdf) page 6
 
 ### FPB-RA0E2 Setup  
-![FPB-RA0E2 Setup](https://github.com/avnet-iotconnect/iotc-lora-demos/assets/ra0e2-setup.jpg)  
+![FPB-RA0E2 Setup](../../img/ra0e2-setup.jpg)  
 - No Pmod UART needed — uses USB directly.
 - Optional sensor on PMOD2.  
 **Ref:** [RA0E2 Setup Diagram, R11AN0596EJ0470](https://www.renesas.com/us/en/document/apn/r11an0596ej0470-ra-lora.pdf) page 7
